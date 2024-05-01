@@ -6,4 +6,9 @@ public partial class Entrar : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void btn_Login_Clicked(object sender, EventArgs e)
+    {
+
+    }
 }
