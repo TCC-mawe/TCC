@@ -1,4 +1,6 @@
-﻿namespace TCC
+﻿using TCC.NovaPasta;
+
+namespace TCC
 {
     public partial class MainPage : ContentPage
     {
@@ -9,9 +11,9 @@
             InitializeComponent();
         }
 
-        private void btn_Entrar_Clicked(object sender, EventArgs e)
+        private async void btn_Entrar_Clicked(object sender, EventArgs e)
         {
-
+           await Navigation.PushAsync(new Entrar());
         }
 
         private void btn_CriarConta_Clicked(object sender, EventArgs e)
