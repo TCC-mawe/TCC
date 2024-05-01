@@ -5,6 +5,7 @@
              Title=""
              BackgroundColor="#FFFAF0">
     <VerticalStackLayout  VerticalOptions="Center" HorizontalOptions="Center">
+        
         <VerticalStackLayout>
             <Image
                 Source="logo.png"
@@ -27,6 +28,7 @@
         <StackLayout Orientation="Horizontal">
             <Frame  BackgroundColor="#FFFAF0" HasShadow="True" Padding="0" BorderColor="Black" HeightRequest="45" HorizontalOptions="FillAndExpand">
                 <Entry x:Name="txt_Usuario" 
+                       Text="{Binding Descricao}"     
                        Placeholder="Usuario:" 
                        Margin="20,0,0,0"
                        VerticalOptions="Center"/>
@@ -35,9 +37,10 @@
         
         
         
-        <StackLayout Orientation="Horizontal">
+        <StackLayout Orientation="Horizontal" >
             <Frame BackgroundColor="#FFFAF0" HasShadow="True" Padding="0" BorderColor="black" HeightRequest="45" HorizontalOptions="FillAndExpand">
                 <Entry x:Name="txt_Senha"
+                       Text="{Binding Senha}"
                        IsPassword="True"
                        Placeholder="Senha:" 
                        Margin="20,0,0,0"
@@ -51,6 +54,6 @@
             HorizontalOptions="Center"
             BackgroundColor="#058140" 
             Clicked="btn_Login_Clicked"/>
-        
+
     </VerticalStackLayout>
 </ContentPage>
