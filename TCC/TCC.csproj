@@ -57,6 +57,7 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\logo.png" />
+	  <None Remove="Resources\Images\passaro.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -66,7 +67,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="NovaPasta\Entrar.xaml">
+	  <MauiXaml Update="Login\Entrar.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
