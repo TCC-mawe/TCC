@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TCC.NovaPasta.Entrar"
              Title=""
-             BackgroundColor="#F2FAF3">
+             BackgroundColor="White">
     <Border StrokeShape="RoundRectangle 20"  HeightRequest="400" WidthRequest="400" HorizontalOptions="Center" Stroke="Black">
         <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
 
@@ -60,7 +60,7 @@
             BackgroundColor="#058140" 
             Clicked="btn_Login_Clicked"
             CornerRadius="20"
-            />
+            Margin="50" />
 
         </VerticalStackLayout>
     </Border>

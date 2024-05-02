@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TCC.MainPage"
              Title=""
-             BackgroundColor="#FFFAF0">
+             BackgroundColor="White">
 
     <ScrollView>
         <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
@@ -20,7 +20,8 @@
                     HorizontalOptions="Center" 
                     Grid.Column="0"
                     WidthRequest="110"
-                    BackgroundColor="Black"/>
+                    BackgroundColor="Black"
+                    />
                 <Button
                     x:Name="btn_CriarConta"
                     Text="Criar Conta"
@@ -28,7 +29,7 @@
                     HorizontalOptions="Center"
                     Grid.Column="1"
                     WidthRequest="110"
-                    BackgroundColor="#058140"/>
+                    BackgroundColor="#058140" />
             </Grid>
         </VerticalStackLayout>
     </ScrollView>
