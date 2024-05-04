@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TCC.Login.CriarConta"
+             Title=""
+             BackgroundColor="White">
+    <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <Image
+            Source="passaro.png"
+            HeightRequest="95" />
+
+        <StackLayout Orientation="Horizontal" HeightRequest="50" >
+            <Border  StrokeShape="RoundRectangle 20"  HeightRequest="45" WidthRequest="300" HorizontalOptions="FillAndExpand" Stroke="Black">
+                <Entry x:Name="txt_email" 
+                       Text="{Binding email}"  
+                       Placeholder="E-mail:" 
+                       PlaceholderColor="#658D67"
+                       VerticalOptions="Center"
+                       BackgroundColor="White"/>
+            </Border>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" HeightRequest="70">
+            <Border  StrokeShape="RoundRectangle 20"  HeightRequest="45" HorizontalOptions="FillAndExpand" Stroke="Black">
+                <Entry x:Name="txt_Telefone" 
+                       Text="{Binding Telefone}"     
+                       Placeholder="Telefone:" 
+                       PlaceholderColor="#658D67"
+                       VerticalOptions="Center"
+                       BackgroundColor="White"/>
+            </Border>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" HeightRequest="55">
+            <Border  StrokeShape="RoundRectangle 20"  HeightRequest="45" HorizontalOptions="FillAndExpand" Stroke="Black">
+                <Entry x:Name="txt_Nome" 
+                       Text="{Binding Nome}"     
+                       Placeholder="Usuário:" 
+                       PlaceholderColor="#658D67"
+                       VerticalOptions="Center"
+                       BackgroundColor="White"/>
+            </Border>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" HeightRequest="60">
+            <Border  StrokeShape="RoundRectangle 20"  HeightRequest="45" HorizontalOptions="FillAndExpand" Stroke="Black">
+                <Entry x:Name="txt_Senha" 
+                       Text="{Binding Senha}"     
+                       Placeholder="Senha:" 
+                       IsPassword="True"
+                       PlaceholderColor="#658D67"
+                       VerticalOptions="Center"
+                       BackgroundColor="White"/>
+            </Border>
+        </StackLayout>
+
+        <Button 
+
+            x:Name="btn_Logon"
+            Text="Continuar"
+            HorizontalOptions="FillAndExpand"
+            BackgroundColor="#047B45" 
+            Clicked="btn_Logon_Clicked"
+            CornerRadius="20" />
+
+    </VerticalStackLayout>
+</ContentPage>

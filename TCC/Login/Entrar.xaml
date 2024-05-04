@@ -3,43 +3,44 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TCC.NovaPasta.Entrar"
              Title=""
-             BackgroundColor="White">
-    <Border StrokeShape="RoundRectangle 20"  HeightRequest="400" WidthRequest="400" HorizontalOptions="Center" Stroke="Black">
+             BackgroundColor="White" >
+    
+       
         <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
 
             <Image
-            Source="passaro.png"
-            HeightRequest="100" />
+                Source="passaro.png"
+                HeightRequest="95" />
 
-            <VerticalStackLayout>
+            <VerticalStackLayout Margin="50">
                 <Label 
-                Text="Bem Vindo ao Mawé!"
-                Style="{StaticResource Headline}" 
-                FontSize="28"
-                FontAttributes="Bold"
-                TextColor="#658D67"/>
+                    Text="Bem Vindo ao Mawé!"
+                    Style="{StaticResource Headline}" 
+                    FontSize="28"
+                    FontAttributes="Bold"
+                    TextColor="#047B45" />
 
                 <Label
-                Text="Fazer login na sua conta"
-                Style="{StaticResource SubHeadline}"
-                FontSize="15.7"
-                TextColor="#1F1E24" />
+                    Text="Fazer login na sua conta"
+                    Style="{StaticResource SubHeadline}"
+                    FontSize="15.7"
+                    TextColor="Black" />
             </VerticalStackLayout>
 
-            <StackLayout Orientation="Horizontal" HeightRequest="65">
+            <StackLayout Orientation="Horizontal" HeightRequest="50">
                 <Border  StrokeShape="RoundRectangle 20"  HeightRequest="45" HorizontalOptions="FillAndExpand" Stroke="Black">
                     <Entry x:Name="txt_Usuario" 
-                       Text="{Binding Descricao}"     
-                       Placeholder="Usuario:" 
+                       Text="{Binding Usuario}"     
+                       Placeholder="Usuário:" 
                        PlaceholderColor="#658D67"
                        VerticalOptions="Center"
-                       BackgroundColor="#F2FAF3"/>
+                       BackgroundColor="White"/>
                 </Border>
             </StackLayout>
 
 
 
-            <StackLayout Orientation="Horizontal" HeightRequest="65" >
+            <StackLayout Orientation="Horizontal" HeightRequest="70" >
                 <Border  StrokeShape="RoundRectangle 20"  HeightRequest="45" HorizontalOptions="FillAndExpand" Stroke="Black">
                     <Entry x:Name="txt_Senha"
                        Text="{Binding Senha}"
@@ -47,21 +48,29 @@
                        Placeholder="Senha:" 
                        PlaceholderColor="#658D67"
                        VerticalOptions="Center"
-                       BackgroundColor="#F2FAF3"/>
+                       BackgroundColor="White" />
                 </Border>
             </StackLayout>
 
 
             <Button 
             
-            x:Name="btn_Login"
-            Text="Continuar"
-            HorizontalOptions="Fill"
-            BackgroundColor="#058140" 
-            Clicked="btn_Login_Clicked"
-            CornerRadius="20"
-            Margin="50" />
+                x:Name="btn_Login"
+                Text="Continuar"
+                HorizontalOptions="FillAndExpand"
+                BackgroundColor="#047B45" 
+                Clicked="btn_Login_Clicked"
+                CornerRadius="20" />
 
-        </VerticalStackLayout>
-    </Border>
+
+        <Label 
+                Text="Esqueceu sua senha?"
+                Style="{StaticResource Headline}" 
+                FontSize="15"
+                TextColor="#658D67" 
+                Margin="20"
+                TextDecorations="Underline" />
+
+    </VerticalStackLayout>
+
 </ContentPage>

@@ -15,9 +15,9 @@ namespace TCC
            await Navigation.PushAsync(new Entrar());
         }
 
-        private void btn_CriarConta_Clicked(object sender, EventArgs e)
+        private async void btn_CriarConta_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new Login.CriarConta());
         }
     }
 
