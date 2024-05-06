@@ -69,7 +69,21 @@
                 FontSize="15"
                 TextColor="#658D67" 
                 Margin="20"
-                TextDecorations="Underline" />
+                TextDecorations="Underline"/>
+
+        <Button 
+             x:Name="btn_esqueceu"
+             Text="Esqueceu sua senha?"
+             HorizontalOptions="FillAndExpand"
+             BackgroundColor="Transparent" 
+             Clicked="btn_esqueceu_Clicked"
+             TextColor="#658D67"
+             FontSize="15"/>
+       
+            
+        
+        
+
 
     </VerticalStackLayout>
 

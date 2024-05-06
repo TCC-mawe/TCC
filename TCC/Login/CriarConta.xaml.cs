@@ -1,6 +1,6 @@
 namespace TCC.Login;
 
-public partial class CriarConta : ContentPage
+public partial class CriarConta : TabbedPage
 {
 	public CriarConta()
 	{
