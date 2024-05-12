@@ -3,12 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TCC.Login.CriarConta" >
 
-    <ContentPage Title="Usuário">
+    <ContentPage Title="Usuário" >
         <ScrollView>
             <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
                 <Image
                     Source="passaro.png"
-                    HeightRequest="95" />
+                    HeightRequest="95" 
+                    Margin="20"/>
 
                 <StackLayout Orientation="Horizontal" HeightRequest="60">
                     <Border  StrokeShape="RoundRectangle 20"  HeightRequest="45" HorizontalOptions="FillAndExpand" Stroke="Black">
@@ -86,9 +87,10 @@
             <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
                 <Image
                      Source="passaro.png"
-                     HeightRequest="95" />
+                     HeightRequest="95" 
+                     Margin="20"/>
 
-                <StackLayout Orientation="Horizontal" HeightRequest="55">
+                <StackLayout Orientation="Horizontal" HeightRequest="60">
                     <Border  StrokeShape="RoundRectangle 20"  HeightRequest="45" HorizontalOptions="FillAndExpand" Stroke="Black">
                         <Entry x:Name="txt_Nome_U" 
                                 Text="{Binding Nome}"     
@@ -99,7 +101,7 @@
                     </Border>
                 </StackLayout>
                 
-                <StackLayout Orientation="Horizontal" HeightRequest="50" >
+                <StackLayout Orientation="Horizontal" HeightRequest="60" >
                     <Border  StrokeShape="RoundRectangle 20"  HeightRequest="45" WidthRequest="300" HorizontalOptions="FillAndExpand" Stroke="Black">
                         <Entry x:Name="txt_email_U" 
                         Text="{Binding email}"  
@@ -162,7 +164,8 @@
                      HorizontalOptions="FillAndExpand"
                      BackgroundColor="#047B45" 
                      Clicked="btn_Logon_Clicked"
-                     CornerRadius="20" />
+                     CornerRadius="20"
+                    Margin="30"/>
             </VerticalStackLayout>
         </ScrollView>
     </ContentPage>

@@ -7,8 +7,8 @@ public partial class CriarConta : TabbedPage
 		InitializeComponent();
 	}
 
-    private void btn_Logon_Clicked(object sender, EventArgs e)
+    private async void btn_Logon_Clicked(object sender, EventArgs e)
     {
-
+        await Navigation.PushAsync(new Login.paginaInicial());
     }
 }

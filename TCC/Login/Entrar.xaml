@@ -53,7 +53,7 @@
             </StackLayout>
 
 
-            <Button 
+        <Button 
             
                 x:Name="btn_Login"
                 Text="Continuar"
@@ -62,15 +62,6 @@
                 Clicked="btn_Login_Clicked"
                 CornerRadius="20" />
 
-
-        <Label 
-                Text="Esqueceu sua senha?"
-                Style="{StaticResource Headline}" 
-                FontSize="15"
-                TextColor="#658D67" 
-                Margin="20"
-                TextDecorations="Underline"/>
-
         <Button 
              x:Name="btn_esqueceu"
              Text="Esqueceu sua senha?"
@@ -78,7 +69,7 @@
              BackgroundColor="Transparent" 
              Clicked="btn_esqueceu_Clicked"
              TextColor="#658D67"
-             FontSize="15"/>
+             FontSize="15" />
        
             
         

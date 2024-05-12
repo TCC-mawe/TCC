@@ -12,9 +12,9 @@ public partial class Entrar : ContentPage
 
     }
 
-    private void btn_esqueceu_Clicked(object sender, EventArgs e)
+    private async void btn_esqueceu_Clicked(object sender, EventArgs e)
     {
-
+        await Navigation.PushAsync(new Login.esqueceuSenha());
     }
 
 }
