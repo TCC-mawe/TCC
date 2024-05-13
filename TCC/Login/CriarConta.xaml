@@ -75,7 +75,7 @@
                     BackgroundColor="#047B45" 
                     Clicked="btn_Logon_Clicked"
                     CornerRadius="20" 
-                    Margin="30"/>
+                    Margin="0, 20, 0, 0"/>
 
             </VerticalStackLayout>
         </ScrollView>
@@ -165,7 +165,7 @@
                      BackgroundColor="#047B45" 
                      Clicked="btn_Logon_Clicked"
                      CornerRadius="20"
-                    Margin="30"/>
+                     Margin="0, 20, 0, 0" />
             </VerticalStackLayout>
         </ScrollView>
     </ContentPage>

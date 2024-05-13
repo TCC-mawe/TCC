@@ -1,4 +1,4 @@
-namespace TCC.NovaPasta;
+namespace TCC.Login;
 
 public partial class Entrar : ContentPage
 {
