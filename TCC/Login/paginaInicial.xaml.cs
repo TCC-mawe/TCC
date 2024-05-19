@@ -6,4 +6,14 @@ public partial class paginaInicial : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void btn_filtros_Clicked(object sender, EventArgs e)
+    {
+
+    }
+
+    private void btn_FotoUsuario_Clicked(object sender, EventArgs e)
+    {
+
+    }
 }
