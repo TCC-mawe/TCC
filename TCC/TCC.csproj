@@ -69,7 +69,10 @@
 	  <None Remove="Resources\Images\filtros.png" />
 	  <None Remove="Resources\Images\fundoTransparente.png" />
 	  <None Remove="Resources\Images\logo.png" />
+	  <None Remove="Resources\Images\logobranco.png" />
+	  <None Remove="Resources\Images\logoRedonda.png" />
 	  <None Remove="Resources\Images\passaro.png" />
+	  <None Remove="Resources\Images\usuario.png" />
 	</ItemGroup>
 
 	<ItemGroup>

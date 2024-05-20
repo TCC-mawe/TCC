@@ -4,47 +4,57 @@
              x:Class="TCC.Login.paginaInicial"
              >
 
-    <LinearGradientBrush StartPoint="0,0"
-                      EndPoint="1,1">
-        <GradientStop Color="Aquamarine" 
-                   Offset="0.0"/>
-        <GradientStop Color="LightCoral"
-                   Offset="1.0"/>
-    </LinearGradientBrush>
 
-        <VerticalStackLayout>
-        <Frame VerticalOptions="Start"
-               BackgroundColor="DarkSlateGray" 
-               CornerRadius="0"
-               Margin="0, 0, 0 ,10"
-               HeightRequest="75">
+    <VerticalStackLayout>
+        <Border  StrokeShape="RoundRectangle 0" 
+                 HeightRequest="70"
+                 HorizontalOptions="FillAndExpand" 
+                 Stroke="Transparent" >
+            <!--<Grid>
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="1, 1">
+                    <GradientStopCollection>
+                            <GradientStop Offset="0" Color="#13b8b9" />
+                            <GradientStop Offset="1" Color="#55f5b5" />
+                    </GradientStopCollection>
+                </LinearGradientBrush>
+            </Grid.Background>-->
 
-        </Frame>
-
-        <Grid ColumnDefinitions="2*, *, *, *, *">
-                <Image Grid.Column="0"
-                   Source="passaro.png"
-                   HorizontalOptions="Start" />
+           
 
 
-                <ImageButton Grid.Column="3"
-                   x:Name="btn_filtros"
-                   Source="filtros.png"
-                   Clicked="btn_filtros_Clicked"
-                   VerticalOptions="End"
-                   BackgroundColor="Transparent"/>
-                
-                <!-- Colocar foto do usuario -->
-                <ImageButton Grid.Column="4"
-                             x:Name="btn_FotoUsuario"
-                             Clicked="btn_FotoUsuario_Clicked"
-                             BackgroundColor="Transparent" 
-                             VerticalOptions="End"/>
-            </Grid>
- 
-        <Border StrokeShape="RoundRectangle 20" HorizontalOptions="Center" Stroke="Black">
+                <Grid ColumnDefinitions="*, *, *, *, *, *, *, *, *, *, *">
+                    <Image Grid.Column="0"
+                        Source="passaro.png"
+                        WidthRequest="55" 
+                        HeightRequest="55"
+                        Margin="20"  
+                        HorizontalOptions="Start" />
+
+                    <!--<ImageButton Grid.Column="10"
+                        x:Name="btn_filtros"
+                        WidthRequest="55" 
+                        HeightRequest="55"
+                        Source="filtros.png"
+                        Clicked="btn_filtros_Clicked"
+                        VerticalOptions="End"
+                        BackgroundColor="Transparent"/>-->
+
+                    <!-- Colocar foto do usuario -->
+                    <ImageButton Grid.Column="11"
+                      x:Name="btn_FotoUsuario"
+                      Clicked="btn_FotoUsuario_Clicked"
+                      Source="usuario.png"
+                      BackgroundColor="Transparent" 
+                      VerticalOptions="End"/>
+                </Grid>
+           
+        <!--</Grid>-->
+        </Border>
+
+        <Border StrokeShape="RoundRectangle 20" HorizontalOptions="Center" Stroke="Green">
             <SearchBar WidthRequest="400" />
         </Border>
-     
+
     </VerticalStackLayout>
 </ContentPage>
