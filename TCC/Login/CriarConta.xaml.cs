@@ -1,3 +1,5 @@
+using SQLite;
+using SQLitePCL;
 namespace TCC.Login;
 
 public partial class CriarConta : TabbedPage
@@ -9,6 +11,6 @@ public partial class CriarConta : TabbedPage
 
     private async void btn_Logon_Clicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new Login.SobreNos());
+            await Navigation.PushAsync(new Login.SobreNos());  
     }
 }

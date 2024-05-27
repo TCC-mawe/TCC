@@ -46,7 +46,8 @@
                       Clicked="btn_FotoUsuario_Clicked"
                       Source="usuario.png"
                       BackgroundColor="Transparent" 
-                      VerticalOptions="End"/>
+                      VerticalOptions="End"
+                                 />
                 </Grid>
            
         <!--</Grid>-->
