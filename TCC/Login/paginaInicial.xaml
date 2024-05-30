@@ -57,5 +57,21 @@
             <SearchBar WidthRequest="400" />
         </Border>
 
+
+        
+        <Border StrokeShape="RoundRectangle 10" HorizontalOptions="Center" Stroke="Black" HeightRequest="150" WidthRequest="350">
+            <StackLayout >
+                <ImageButton Source="" 
+                             HeightRequest="100"
+                             WidthRequest="100"/>
+
+                <Label Text="Descrição" 
+                       HorizontalOptions="Start"/>
+            </StackLayout>
+        </Border>
+        
+
+
+
     </VerticalStackLayout>
 </ContentPage>
