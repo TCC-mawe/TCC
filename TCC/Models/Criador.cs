@@ -1,21 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SQLite;
+
 
 namespace TCC.Models
 {
-    internal class Criador
+    public class Criador
     {
-        public string User { get; set; }
+        [AutoIncrement]
+        public int Id { get; set; }
 
-        public string Email { get; set; }
+        [NotNull]
+        public string User_criador {  get; set; }
 
-        public string Senha { get; set; }
+        [NotNull]
+        public string Email_criador {  get; set; }
 
+        [NotNull]
+        public string Senha_criador {  get; set; }
+
+        [MaxLength(11), NotNull]
         public int Telefone { get; set; }
 
+        [MaxLength(11), NotNull]
         public int CPF { get; set; }
     }
 }
